@@ -5,7 +5,7 @@
   background: @tree-view-background-color;
 
   .selected:before {
-    background: #444;
+    background: repeating-linear-gradient(0deg, #000 1px, #000 1px, #030 3px, #030 1px);
     box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
   }
 }
@@ -21,10 +21,10 @@
   box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
 
   &:focus {
-    background: #282828;
+	color: #0F0;
 
     .selected:before {
-      background: @background-color-selected;
+      background: repeating-linear-gradient(0deg, #000 1px, #000 1px, @background-color-selected 3px, @background-color-selected 1px);
     }
   }
 }

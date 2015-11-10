@@ -1,7 +1,7 @@
 @import "ui-variables";
-@tab-radius: 3px;
+@tab-radius: 2px;
 @modified-icon-width: 8px;
-@tab-skew: 30deg;
+@tab-skew: 0deg;
 @tab-top-padding: 5px;
 @tab-bottom-border-height: 5px;
 @tab-border: 1px solid @tab-border-color;
@@ -12,7 +12,7 @@
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
   background: @tab-bar-background-color;
   box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
-  padding: 0 10px 0 25px;
+  padding: 0 10px 0 5px;
   overflow-x: auto;
   overflow-y: hidden;
 
@@ -42,12 +42,13 @@
     padding: 0;
     margin: 0 20px 0 5px;
     color: @text-color;
+	letter-spacing: 0px;
 
     transition: color .1s ease-in;
     border: none;
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      background-image: -webkit-linear-gradient(top, lighten(#000200, 7%), #000200);
       height: @tab-height;
     }
 
@@ -63,7 +64,7 @@
     &:before {
       left: -14px;
       border-top-left-radius: @tab-radius;
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
+	//   box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
       -webkit-transform: skewX(-@tab-skew);
     }
 
@@ -71,7 +72,7 @@
     &:after {
       right: -14px;
       border-top-right-radius: @tab-radius;
-      box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
+    //   box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
       -webkit-transform: skewX(@tab-skew);
     }
 
@@ -109,6 +110,7 @@
     z-index: 1;
     color: @text-color-highlight;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+	text-shadow: 0px 0px 5px rgba(100,255,100,0.5);
 
     .close-icon {
       line-height: @tab-height - 1px;
