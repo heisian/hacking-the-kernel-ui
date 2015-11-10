@@ -1,18 +1,17 @@
 @import "ui-variables";
-@tab-radius: 2px;
+@tab-radius: 1px;
 @modified-icon-width: 8px;
-@tab-skew: 0deg;
-@tab-top-padding: 5px;
-@tab-bottom-border-height: 5px;
+@tab-skew: -1deg;
+@tab-top-padding: 2px;
+@tab-bottom-border-height: 1px;
 @tab-border: 1px solid @tab-border-color;
-@tab-bar-bottom-border-color: #111;
-@tab-max-width: 160px;
+@tab-bar-bottom-border-color: #030;
+@tab-max-width: 150px;
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
   background: @tab-bar-background-color;
-  box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
-  padding: 0 10px 0 5px;
+  padding: 0 0px 0 5px;
   overflow-x: auto;
   overflow-y: hidden;
 
@@ -23,7 +22,7 @@
   &:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     height: @tab-bottom-border-height;
     left: 0;
     right: 0;
@@ -42,7 +41,7 @@
     padding: 0;
     margin: 0 20px 0 5px;
     color: @text-color;
-	letter-spacing: 0px;
+	letter-spacing: -0.2px;
 
     transition: color .1s ease-in;
     border: none;
@@ -110,12 +109,16 @@
     z-index: 1;
     color: @text-color-highlight;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
-	text-shadow: 0px 0px 5px rgba(100,255,100,0.5);
+	text-shadow: 0px 0px 5px rgba(100,255,100,1);
 
     .close-icon {
       line-height: @tab-height - 1px;
       color: @text-color;
     }
+
+	.title::before {
+		text-shadow: none;
+	}
 
     &, &:before, &:after {
       background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);

@@ -4,7 +4,7 @@
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
   background-color: transparent;
-  background-image: -webkit-linear-gradient(@color, darken(@color, 5%));
+  border: 1px solid #040;
 
   &:focus {
     color: @text-color;
@@ -17,6 +17,7 @@
   &.selected:hover {
     color: @text-color-highlight;
     background-image: -webkit-linear-gradient(darken(@selected-color, 5%), @selected-color);
+	text-shadow: 0px 0px 5px rgba(100,255,100,1);
     &:hover {
       background-image: -webkit-linear-gradient(@selected-color, darken(@selected-color, 5%));
     }

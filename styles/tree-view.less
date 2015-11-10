@@ -5,8 +5,8 @@
   background: @tree-view-background-color;
 
   .selected:before {
-    background: repeating-linear-gradient(0deg, #000 1px, #000 1px, #030 3px, #030 1px);
-    box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+    background: repeating-linear-gradient(0deg, #000 1px, #000 1px, #050 3px, #050 1px);
+    box-shadow: inset 0 0 10px rgba(0,0,0, 1);
   }
 }
 
@@ -18,10 +18,9 @@
 
 .focusable-panel {
   opacity: 1;
-  box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
 
   &:focus {
-	color: #0F0;
+	color: #FFF;
 
     .selected:before {
       background: repeating-linear-gradient(0deg, #000 1px, #000 1px, @background-color-selected 3px, @background-color-selected 1px);
