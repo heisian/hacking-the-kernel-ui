@@ -5,8 +5,8 @@
   background: @tree-view-background-color;
 
   .selected:before {
-    background: repeating-linear-gradient(0deg, #000 1px, #000 1px, #050 3px, #050 1px);
-    box-shadow: inset 0 0 10px rgba(0,0,0, 1);
+    background: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,10%) 3px, lighten(@background-color-selected,10%) 1px);
+    box-shadow: inset 0 0 10px 3px rgba(0,0,0, 1);
   }
 }
 
@@ -23,7 +23,7 @@
 	color: #FFF;
 
     .selected:before {
-      background: repeating-linear-gradient(0deg, #000 1px, #000 1px, @background-color-selected 3px, @background-color-selected 1px);
+      background: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,20%) 3px, lighten(@background-color-selected,20%) 1px);
     }
   }
 }
