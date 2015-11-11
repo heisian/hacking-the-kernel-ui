@@ -88,10 +88,12 @@
     }
 
     &.modified:not(:hover) .close-icon {
-      right: 0;
+	  right: 8px;
+	  border: 2px solid @text-color-info;
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
       width: @modified-icon-width;
       height: @modified-icon-width;
+	  box-shadow: 0px 0px 10px rgba(100,255,100,1);
     }
 
     &.modified:hover .close-icon:hover {
