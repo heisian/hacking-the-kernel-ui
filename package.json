@@ -3,6 +3,13 @@
   "theme": "ui",
   "version": "1.1.5",
   "description": "An Atom UI theme for your late-night coding sessions...",
+  "keywords": [
+    "ui",
+    "theme",
+    "dark",
+    "green",
+    "matrix"
+  ],
   "license": "MIT",
   "repository": "https://github.com/heisian/hacking-the-kernel-ui",
   "engines": {
