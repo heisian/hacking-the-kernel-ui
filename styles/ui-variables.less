@@ -6,9 +6,9 @@
 @text-color-selected: @text-color-highlight;
 
 @text-color-info: #94ff95;
-@text-color-success: #0F0;
-@text-color-warning: #94ff8e;
-@text-color-error: #b0dd00;
+@text-color-success: #0F6;
+@text-color-warning: #AF3;
+@text-color-error: #F63;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -69,21 +69,24 @@
 @ui-site-color-4: #db2ff4; // purple
 @ui-site-color-5: #f5e11d; // yellow
 
+@scanline-background-dark: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,10%) 3px, lighten(@background-color-selected,10%) 1px);
+@scanline-background-darkest: repeating-linear-gradient(0deg, #000 1px, #000 1px, @background-color-selected 3px, @background-color-selected 1px);
+@scanline-background-light: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,20%) 3px, lighten(@background-color-selected,20%) 1px);
 
 // Sizes
 
-@font-size: 11px;
+@font-size: 13px;
 @input-font-size: 13px;
 
 @disclosure-arrow-size: 12px;
 
-@component-padding: 8px;
-@component-icon-padding: 3px;
-@component-icon-size: 12px;
-@component-line-height: 19px;
+@component-padding: 18px;
+@component-icon-padding: 4px;
+@component-icon-size: 8px;
+@component-line-height: 20px;
 @component-border-radius: 2px;
 
-@tab-height: 24px;
+@tab-height: 26px;
 
 
 // Other

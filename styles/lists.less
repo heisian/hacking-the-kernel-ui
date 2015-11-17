@@ -2,6 +2,10 @@
 @import "ui-mixins";
 @import "octicon-mixins";
 
+.list-tree.has-collapsable-children .list-nested-item > .list-tree > li {
+	padding-left: 10px;
+}
+
 .list-group, .list-tree {
   li:not(.list-nested-item),
   li.list-nested-item > .list-item {
@@ -25,7 +29,13 @@
     li:not(.list-nested-item).status-@{status},
     li.list-nested-item.status-@{status} > .list-item {
       color: @color;
+	  text-shadow: 0px 0px 5px rgba(0,255,0,0.7);
     }
+
+	// icons in tree-view
+	.icon-file-text[data-name$=".less"]:before {
+		text-shadow: none;
+	}
 
     li:not(.list-nested-item).selected.status-@{status},
     li.list-nested-item.selected.status-@{status} > .list-item {
@@ -58,7 +68,7 @@
   // We want to highlight the background of the list items because we dont
   // know their size.
   li.selected {
-    background: repeating-linear-gradient(0deg, #000 1px, #000 1px, @background-color-selected 3px, @background-color-selected 1px);
+    background: @scanline-background-darkest;
     &:before{ display: none; }
   }
 

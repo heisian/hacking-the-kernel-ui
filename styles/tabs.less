@@ -41,7 +41,8 @@
     padding: 0 5px 0 8px;
     margin: 0;
     color: darken(@text-color,10%);
-	letter-spacing: -0.2px;
+	letter-spacing: -0.1px;
+	font-size: 12px;
 
     transition: color .1s ease-in;
     border: none;
@@ -112,7 +113,7 @@
     color: @text-color-highlight;
 	text-shadow: 0px 0px 5px rgba(100,255,100,0.5);
 	box-shadow: inset 0px 0px 10px 5px black;
-	background: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,3%) 3px, lighten(@background-color-selected,0%) 1px);
+	background: @scanline-background-dark;
 
 	.title::before {
 	  text-shadow: none;
