@@ -33,8 +33,16 @@
     }
 
 	// icons in tree-view
+	.icon-file-text:before {
+		top: 0px;
+		color: #080;
+	}
+
+	// icons in tree-view
 	.icon-file-text[data-name$=".less"]:before {
+		top: 0px;
 		text-shadow: none;
+		color: #080;
 	}
 
     li:not(.list-nested-item).selected.status-@{status},
@@ -64,7 +72,7 @@
   li.two-lines {
     .secondary-line { color: @text-color-subtle; }
     &.selected .secondary-line {
-      color: @text-color;
+      color: @darkgreen;
       text-shadow: none;
     }
   }
@@ -72,7 +80,11 @@
   // We want to highlight the background of the list items because we dont
   // know their size.
   li.selected {
-    background: @scanline-background-darkest;
+    // background: @scanline-background-darkest;
+	background: @green;
+	color: #000;
+	font-weight: bold;
+	text-shadow: none;
     &:before{ display: none; }
   }
 
@@ -107,7 +119,7 @@
 .select-list.popover-list {
   background-color: @overlay-background-color;
   box-shadow: 0 0 10px @base-border-color;
-  padding: @component-padding/2;
+  padding: @component-padding/3;
   border-radius: @component-border-radius;
   border: 1px solid @overlay-border-color;
 
