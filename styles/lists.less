@@ -118,10 +118,10 @@
 
 .select-list.popover-list {
   background-color: @overlay-background-color;
-  box-shadow: 0 0 10px @base-border-color;
+  box-shadow: 0 0 50px rgba(0, 255, 50, 0.25);
   padding: @component-padding/3;
   border-radius: @component-border-radius;
-  border: 1px solid @overlay-border-color;
+  border: 3px solid @overlay-border-color;
 
   atom-text-editor {
     margin-bottom: @component-padding/2;
@@ -130,6 +130,17 @@
   .list-group li {
     padding-left: @component-padding/2;
   }
+}
+
+autocomplete-suggestion-list.select-list.popover-list
+ol.list-group li.selected .word {
+  color: @base-background-color;
+}
+
+autocomplete-suggestion-list.select-list.popover-list
+ol.list-group li.selected .character-match {
+  color: #020;
+  text-decoration: underline;
 }
 
 .ui-sortable {
