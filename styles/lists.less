@@ -80,9 +80,11 @@
   // We want to highlight the background of the list items because we dont
   // know their size.
   li.selected {
-    // background: @scanline-background-darkest;
-	background: @green;
-	color: #000;
+    background: @scanline-background-dark;
+	// background: @green;
+	color: @green;
+    outline: 1px solid @green;
+    border: 1px solid @green;
 	font-weight: bold;
 	text-shadow: none;
     &:before{ display: none; }
@@ -96,7 +98,7 @@
     // without worrying about the icon padding.
     li:before {
       content: '';
-      background-color: transparent;
+      background: @scanline-background-dark;
       position: static;
       display: inline-block;
       left: auto; right: auto;
@@ -134,12 +136,12 @@
 
 autocomplete-suggestion-list.select-list.popover-list
 ol.list-group li.selected .word {
-  color: @base-background-color;
+  color: @green;
 }
 
 autocomplete-suggestion-list.select-list.popover-list
 ol.list-group li.selected .character-match {
-  color: #020;
+  color: @green;
   text-decoration: underline;
 }
 
@@ -164,4 +166,8 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
   padding: 0 @component-padding;
   background: @background-color-highlight;
   box-shadow: 0 0 1px @base-border-color;
+}
+
+.list-group .selected::before {
+    background: rgba(0, 255, 0, 0.2) !important;
 }
