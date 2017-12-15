@@ -3,15 +3,17 @@
 
 atom-text-editor[mini], atom-text-editor[mini].editor {
   color: @text-color-highlight;
-  border: 1px solid @input-border-color;
-  border-radius: @component-border-radius;
+  border: none;
+  border-bottom: 2px solid @input-border-color;
+  border-radius: 0;
   padding-left: @component-padding/2;
 
   .cursor { border-color: #fff; }
   .selection .region { background-color: lighten(@input-background-color, 10%); }
+
 }
 
 atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused.editor {
-  background-color: lighten(@input-background-color, 5%);
+  border-bottom: 2px solid @green;
   .selection .region { background-color: desaturate(@background-color-info, 50%); }
 }

@@ -3,8 +3,6 @@
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
-  background-color: transparent;
-  border: 1px solid #040;
   border-radius: 0px;
 
   &:focus {
@@ -34,6 +32,10 @@
 
 .btn {
   .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
+
+  border: none !important;
+  border-bottom: 2px solid #050 !important;
+  border-radius: 0 !important;
 }
 
 .btn.btn-primary {

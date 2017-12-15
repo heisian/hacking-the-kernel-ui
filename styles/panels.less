@@ -12,8 +12,7 @@
 atom-panel, .tool-panel {
   .text(normal);
   position: relative;
-
-  background-color: @tool-panel-background-color;
+  background: transparent;
 
   &.bottom, &.panel-bottom {
     border-top: 1px solid @tool-panel-border-color;
@@ -108,6 +107,20 @@ atom-panel, .tool-panel {
 
     &:checked {
       background-color: @text-color;
+    }
+  }
+
+  .package-detail .package-card, .package-card {
+    padding: 2em;
+    font-size: small;
+    font-weight: 300;
+    background: transparent;
+    border: 1px solid #030;
+    border-radius: 0;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid @green;
     }
   }
 
