@@ -63,8 +63,8 @@
 @tree-view-background-color: #000;
 @tree-view-border-color: @tool-panel-border-color;
 
-@scrollbar-background-color: #020; // Needs to be opaque -> atom/atom/issues/4578
-@scrollbar-color: rgba(92, 92, 92, 0.5);
+@scrollbar-background-color: #010; // Needs to be opaque -> atom/atom/issues/4578
+@scrollbar-color: rgba(0, 255, 0, 0.5);
 
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
@@ -72,9 +72,9 @@
 @ui-site-color-4: #db2ff4; // purple
 @ui-site-color-5: #f5e11d; // yellow
 
-@scanline-background-dark: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,10%) 3px, lighten(@background-color-selected,10%) 1px);
-@scanline-background-darkest: repeating-linear-gradient(0deg, #000 1px, #000 1px, @background-color-selected 3px, @background-color-selected 1px);
-@scanline-background-light: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,20%) 3px, lighten(@background-color-selected,20%) 1px);
+@scanline-background: repeating-linear-gradient(0deg, #000 1px, #000 1px, darken(@background-color-selected,1%) 3px, @background-color-selected 1px);
+@scanline-background-dark: repeating-linear-gradient(0deg, #000 1px, #000 1px, darken(@background-color-selected,7%) 3px, @background-color-selected 1px);
+@scanline-background-light: repeating-linear-gradient(0deg, #000 1px, #000 1px, lighten(@background-color-selected,15%) 3px, @background-color-selected 1px);
 
 // Sizes
 
@@ -94,4 +94,4 @@
 
 // Other
 
-@font-family: monospace;
+@font-family: 'Source Code Pro', monospace;

@@ -10,10 +10,15 @@
 
 atom-pane-container {
   atom-pane {
-    background-color: lighten(@app-background-color, 4%);
+    background: @scanline-background-dark;
+    box-shadow: 0 0 20em 5em black inset;
 
     &:focus {
       background-color: @app-background-color;
+    }
+
+    .item-views .pane-item {
+      background-color: transparent;
     }
   }
 

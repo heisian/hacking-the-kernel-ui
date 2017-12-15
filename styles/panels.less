@@ -61,6 +61,78 @@ atom-panel, .tool-panel {
   }
 }
 
-.settings-view input[type="checkbox"]:checked {
-    background-color: @text-color;
+.settings-view {
+  font-size: smaller;
+
+  .config-menu {
+    background: none;
+
+    .nav {
+      li {
+        a:hover {
+          background: @scanline-background-light;
+          box-shadow: 0 0 2em 1em black inset;
+        }
+      }
+      li.active {
+        a {
+          background: @scanline-background-light;
+          box-shadow: 0 0 2em 1em black inset;
+        }
+        a:hover {
+          cursor: default;
+        }
+      }
+    }
+
+    .button-area > .btn {
+      font-size: 0.9em;
+      padding: 0;
+    }
+
+    .btn.icon:before {
+      margin-right: 0.2em;
+    }
+
+    .icon {
+      &:before {
+        vertical-align: -10%;
+        margin-right: 0.75em;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    margin-top: 0.5em;
+    scale: 1.5; 
+
+    &:checked {
+      background-color: @text-color;
+    }
+  }
+
+  .settings-panel {
+    .control-group + .control-group {
+      margin-top: 3em;
+    }
+
+    padding: 4em !important;
+  }
+
+  select.form-control {
+    height: 2em;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid @darkgreen;
+    cursor: pointer;
+    margin: 0.7em 0 0 0;
+
+    &:hover, &:focus {
+      border-color: #0F0;
+      background: transparent;
+      text-color: @green;
+      background: rgba(0, 255, 0, 0.1);;
+    }
+  }
 }

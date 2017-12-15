@@ -5,13 +5,14 @@
   color: @text-color;
   background-color: transparent;
   border: 1px solid #040;
+  border-radius: 0px;
 
   &:focus {
     color: @text-color;
   }
   &:hover {
     color: @text-color-highlight;
-    background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 5%));
+    background: darken(@green, 45%);
   }
   &.selected,
   &.selected:hover {
