@@ -7,4 +7,4 @@ Satiate your old-school CRT nostalgia!
 Get the matching syntax theme [here](https://atom.io/themes/hacking-the-kernel).
 
 ## Preview
-![A screenshot of your theme](https://raw.githubusercontent.com/heisian/hacking-the-kernel-ui/master/screenshot.jpg)
+![A screenshot of your theme](https://raw.githubusercontent.com/heisian/hacking-the-kernel-ui/master/screenshot.png)
