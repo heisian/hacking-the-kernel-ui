@@ -1,6 +1,6 @@
 # Hacking the Kernel Atom UI Theme
 
-A black & green theme for your late-night coding sessions...
+A black & green theme for your late-night coding sessions.
 
 Satiate your old-school CRT nostalgia!
 
