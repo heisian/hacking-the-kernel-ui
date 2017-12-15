@@ -5,21 +5,19 @@
 }
 
 .atom-dock-resize-handle.atom-dock-resize-handle-resizable {
-  background: darken(@darkgreen, 10%);
+  background: transparent;
+  border-left: 1px dotted @darkgreen;
+  border-right: 1px dotted @darkgreen;
 }
 
 atom-workspace {
   background-color: @app-background-color;
-
-  .atom-dock-resizes-handle {
-    background: red;
-  }
 }
 
 .scrollbars-visible-always {
   /deep/ ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
   }
 
   /deep/ ::-webkit-scrollbar-track,
@@ -28,9 +26,7 @@ atom-workspace {
   }
 
   /deep/ ::-webkit-scrollbar-thumb {
-    background: @scanline-background;
-    border: 1px solid #060;
-    box-shadow: 0 0 5px 2px black inset;
+    background: @darkgreen;
   }
 }
 
