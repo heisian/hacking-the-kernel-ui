@@ -16,17 +16,25 @@ atom-workspace {
 
 .scrollbars-visible-always {
   /deep/ ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
   }
 
-  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-track {
+    background: @scanline-background;
+  }
+
   /deep/ ::-webkit-scrollbar-corner {
-    background: @scrollbar-background-color;
+    border: 1px solid #090;
   }
 
   /deep/ ::-webkit-scrollbar-thumb {
-    background: @darkgreen;
+    background: @text-color-subtle;
+
+    &:hover {
+      background: @text-color-highlight;
+      box-shadow: 0 0 5px 1px rgba(50, 255, 50, 0.5);;
+    }
   }
 }
 
