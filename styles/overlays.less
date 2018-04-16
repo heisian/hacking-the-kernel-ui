@@ -42,3 +42,30 @@ atom-panel.modal, .overlay {
     }
   }
 }
+
+atom-notifications {
+  font-size: x-small;
+
+  atom-notification {
+    &.has-close .message {
+      padding-right: 3em; // space for icon
+    }
+  }
+
+  atom-notification:first-child {
+    .close-all {
+      display: block;
+    }
+    .message {
+      padding-right: 8em; // space for icon and button
+    }
+  }
+
+  .btn-toolbar.btn-toolbar > .btn {
+    height: initial;
+    padding-bottom: 0.25em;
+    margin-left: 0;
+    margin-bottom: 5px;
+    background-color: black;
+  }
+}

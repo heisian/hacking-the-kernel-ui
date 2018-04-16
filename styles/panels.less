@@ -60,8 +60,17 @@ atom-panel, .tool-panel {
   }
 }
 
+.welcome {
+  input[type="checkbox"] {
+      background-color: @darkgreen;
+    &:checked {
+      background-color: @green;
+    }
+  }
+}
+
 .settings-view {
-  font-size: smaller;
+  font-size: small;
 
   .alert-info {
     background: #0D0;
